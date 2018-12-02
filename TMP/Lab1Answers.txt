@@ -1,0 +1,51 @@
+Additional Questions for CSC501 - Operating Systems project PA01
+
+Note: Open it in notepad not in notepad++.
+
+Name -Rahul Sethi
+UnityID - rsethi3
+
+--------------------------------------------------------------------------------------------------------------------------
+							||--XX--||
+
+Q1 - What are the advantages and disadvantages of each of the two scheduling policies? Also, give the advantages and 
+disadvantages of the round robin scheduling policy originally implemented in Xinu.
+
+Ans1 - 	
+
+Advantages -
+
+1.Exponential Distribution:
+We have to just control the random number generator and because of randomization all the processes have equal chance 
+of getting scheduled. The problem of starvation is also resolved
+
+2.Linux Like:
+For a given time frame all the processes are scheduled according to their priority and goodness value which ensures 
+fairness.
+
+3.Round Robin Scheduler:
+It's a lot faster. We just have to compare the priorities. All the processes get equal running time. It has a better response
+time as well.
+
+Disadvantages -
+
+1.Exponential Distribution:
+There may be a starvation for I/O processes. If the value of lambda is not chosen properly it may cause unfair scheduling.
+
+2.Linux Like:
+Response time is very less as lot of calculations are involved.
+
+3.Round Robin Scheduler:
+The problem of starvation is highly likely.
+
+							||--XX--||
+
+Q2 - Describe the way each of the schedulers affects the NULL process.
+
+Ans2 - 
+1.Exponential Distribution: NULL processes are scheduled when the ready queue is empty.
+2.Linux Like Scheduler: NULL processes are not scheduled.
+3.Default: NULL processes are not scheduled.
+
+							||--XX--||
+--------------------------------------------------------------------------------------------------------------------------
